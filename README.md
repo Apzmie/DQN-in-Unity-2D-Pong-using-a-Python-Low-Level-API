@@ -1,2 +1,2 @@
 # DQN-in-Unity-2D-Pong-using-a-Python-Low-Level-API
-DQN with Prioritized Experience Replay and Multi-step Learning in PyTorch, playable on itch.io.
+DQN is a foundational reinforcement learning algorithm that was first applied to Atari games. To study DQN in depth, I created a 2D Pong environment in Unity using a Python low-level API. ML-Agents is only used to obtain observations. I used an MLP instead of a CNN to speed up training. Prioritized Experience Replay and Multi-step Learning in Rainbow DQN are used to enhance training of speed, as well. This project is based on the original DQN and Rainbow DQN papers.
