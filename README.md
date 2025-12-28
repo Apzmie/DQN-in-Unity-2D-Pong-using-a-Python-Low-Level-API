@@ -12,5 +12,5 @@ You can play against the Paddle AI directly in your browser at [https://apzmie.i
 - Inference Engine: 2.2.2
 
 ## Python Environment
-- Python 3.10.12 (Training)
-- Python 3.12.12 (ONNX Conversion)
+- Python 3.10.12 (for Training)
+- Python 3.12.12 (for ONNX Conversion)
