@@ -4,6 +4,6 @@ mlagents-envs==1.1.0
 matplotlib==3.10.8
 numpy==1.23.5
 
-# Python 3.12.12 (for ONNX)
+# Python 3.12.12 (for ONNX Conversion)
 onnx==1.20.0
 torch==2.9.0+cpu
