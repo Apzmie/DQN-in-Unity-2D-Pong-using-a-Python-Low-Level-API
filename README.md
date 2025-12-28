@@ -5,6 +5,8 @@ DQN is used with an MLP, taking the paddle and ball coordinates as neural networ
 learning*](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf), and the Rainbow DQN paper [*Rainbow: Combining Improvements in Deep Reinforcement Learning*](https://arxiv.org/pdf/1710.02298.pdf).
 
 You can play against the Paddle AI directly in your browser at [https://apzmie.itch.io/](https://apzmie.itch.io/), on both PC and mobile devices.
+<img src="images/2d_pong.png" alt="2d_pong" width="30%">
+
 
 ## Environment
 ### Unity
