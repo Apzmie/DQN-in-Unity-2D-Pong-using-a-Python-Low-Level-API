@@ -6,11 +6,16 @@ learning*](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15Na
 
 You can play against the Paddle AI directly in your browser at [https://apzmie.itch.io/](https://apzmie.itch.io/), on both PC and mobile devices.
 
-## Unity Environment
+## Environment
+### Unity
 - Unity Editor: 6000.3.0f1
 - ML Agents: 4.0.0
 - Inference Engine: 2.2.2
 
-## Python Environment
+### Python
 - Python 3.10.12 (for Training)
 - Python 3.12.12 (for ONNX Conversion)
+
+## DQN Diagram
+![dqn_diagram](images/dqn_diagram.png)
+hh
