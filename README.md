@@ -21,6 +21,9 @@ You can play against the Paddle AI directly in your browser at [https://apzmie.i
 
 ## DQN Diagram
 ![dqn_diagram](images/dqn_diagram.png)
+### Epsilon
 The agent selects actions using an epsilon-greedy policy. At the beginning of training, epsilon is set to 1.0 to encourage random actions and sufficient exploration. Epsilon is gradually decreased over time using an epsilon decay rate, so that the agent focuses more on exploitation rather than exploration. Epsilon is not reduced to 0 because this would cause the agent to lose opportunities for further improvement.
 
-Q-value represents the expected total reward of taking a specific action in a given state. The target of Q-value is calculated as the sum of immediate reward and the maximum Q-value of the next state. This is because the value of a current action depends on the quality of the resulting future state.
+### Target Q-value
+The target of Q-value is calculated as the sum of immediate reward and the maximum Q-value of the next state. This is because the value of a current action depends on the quality of the resulting future state. The discount factor gamma is set to 0.99 instead of 1 to prevent the Q-value from growing infinitely. In the original theoretical formula, gamma is raised to the power of t to give more importance to short-term rewards rather than long-term rewards.
+However, in the actual code implementation, the power of t is not applied to gamma. The Q-value is updated toward this target Q-value, the target network is periodically updated by copying the current Q-network, and the values produced by the target network already have the discount factor applied, so no further discounting is needed.
