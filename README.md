@@ -27,3 +27,15 @@ The agent selects actions using an epsilon-greedy policy. At the beginning of tr
 ### Target Q-value
 The target of Q-value is calculated as the sum of immediate reward and the maximum Q-value of the next state. This is because the value of a current action depends on the quality of the resulting future state. The discount factor gamma is set to 0.99 instead of 1 to prevent the Q-value from growing infinitely. In the original theoretical formula, gamma is raised to the power of t to give more importance to short-term rewards rather than long-term rewards.
 However, in the actual code implementation, the power of t is not applied to gamma. This is because the Q-value is updated toward the target Q-value, the target network is periodically updated by copying the current Q-network, and the value produced by the target network already has the discount factor applied, so no further discounting is needed.
+
+### Additional Techniques
+#### - DQN
+- error clip
+- collect transition
+- state skip
+
+#### - Rainbow DQN
+- Prioritized replay: samples transitions with large TD errors more frequently
+- Multi-step learning: updates Q-values using cumulative rewards from several steps
+
+Implementing only these two techniques resulted in faster learning.
