@@ -44,5 +44,7 @@ Implementing only these two techniques resulted in faster learning.
 
 ## Learning Progress
 ![plot](images/plot.png)
-
 In the average reward graph, rewards gradually increase as epsilon decays, showing that learning is progressing well. In the average max Q-value graph, the first inflection point occurs to adjust the initial random Q-values, and the second inflection point occurs to adjust action choices toward better strategies.
+
+## Results
+- When the ball angle was fixed, the paddle was able to return almost all incoming balls. However, when the ball angle varied depending on the contact point with the paddle, the paddle occasionally failed to return the ball, even though the model was saved after achieving a test score of over 600 points with epsilon set to 0.0.
