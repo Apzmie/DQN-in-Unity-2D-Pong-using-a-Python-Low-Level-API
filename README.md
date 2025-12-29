@@ -41,3 +41,8 @@ Value-based inputs are used instead of frame inputs for faster learning.
 - Multi-step learning: updates Q-values using cumulative rewards from several steps
 
 Implementing only these two techniques resulted in faster learning.
+
+## Learning Progress
+![plot](images/plot.png)
+
+In the average reward graph, rewards gradually increase as epsilon decays, showing that learning is progressing well. In the average max Q-value graph, the first inflection point occurs to adjust the initial random Q-values, and the second inflection point occurs to adjust action choices toward better strategies.
