@@ -30,9 +30,11 @@ However, in the actual code implementation, the power of t is not applied to gam
 
 ### Additional Techniques
 #### - DQN
-- error clip
-- collect transition
-- state skip
+- TD-error clipping: limits the magnitude of TD error
+- Initial collection: fills the replay memory with random transitions before training
+- State skipping: skips some states while repeating the same action
+
+Value-based inputs are used instead of frame inputs for faster learning.
 
 #### - Rainbow DQN
 - Prioritized replay: samples transitions with large TD errors more frequently
