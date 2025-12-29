@@ -12,7 +12,6 @@ public class Ball : MonoBehaviour
     public float yThreshold;
     public float yHoldTime;
     
-
     private Rigidbody2D rb;
     private Vector2 direction;
     private float yHoldTimer = 0f;
