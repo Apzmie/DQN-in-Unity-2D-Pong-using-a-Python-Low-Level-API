@@ -44,7 +44,9 @@ Implementing only these two techniques resulted in faster learning.
 
 ## Learning Progress
 ![plot](images/plot.png)
+This was conducted in an environment where the ball speed was fixed and the ball angle varied depending on the contact point with the paddle.
+
 In the average reward graph, rewards gradually increase as epsilon decays, showing that learning is progressing well. In the average max Q-value graph, the first inflection point occurs to adjust the initial random Q-values, and the second inflection point occurs to adjust action choices toward better strategies.
 
 ## Results
-- When the ball angle was fixed, the paddle was able to return almost all incoming balls. However, when the ball angle varied depending on the contact point with the paddle, the paddle occasionally failed to return the ball, even though the model was saved after achieving a test score of over 600 points with epsilon set to 0.0.
+When the ball angle was fixed, the paddle was able to return almost all incoming balls. However, when the ball angle varied depending on the contact point with the paddle, the paddle occasionally failed to return the ball, even though the model was saved after achieving a test score of over 600 points with epsilon set to 0.0. Additionally, when the ball speed varied, the training process became unstable and failed to converge. It is considered that DQN updates action values solely based on past transitions without modeling the environment dynamics, which may lead to overfitting to a specific trajectory under diverse ball dynamics.
