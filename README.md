@@ -34,7 +34,7 @@ However, in the actual code implementation, the power of t is not applied to gam
 - Initial collection: fills the replay memory with random transitions before training
 - State skipping: skips some states while repeating the same action
 
-Value-based inputs are used instead of frame inputs for faster learning.
+Coordinate inputs are used instead of image inputs for faster learning.
 
 #### - Rainbow DQN
 - Prioritized replay: samples transitions with large TD errors more frequently
