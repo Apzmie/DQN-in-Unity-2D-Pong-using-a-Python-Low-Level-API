@@ -1,5 +1,5 @@
 # Python 3.10.12 (for training)
-torch == 2.7.1+cu118
+torch==2.7.1+cu118
 mlagents-envs==1.1.0
 matplotlib==3.10.8
 numpy==1.23.5
